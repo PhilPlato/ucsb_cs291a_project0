@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+html,
+body,
+.page {
+  height: 100%;
+}
+body {
+  font-family: 'Haas Grot Text R Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  background: #fff;
+  color: #0d0c22;
+}
+.page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  position: fixed;
+  top: 0;
+  z-index: 9996;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 24px;
+  height: 58px;
+}
+.nav-bar-collapse {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  /* 媒体查询时使用 */
+  /* display: none; */
+}
+.menu,
+.close {
+  width: 18px;
+  height: 18px;
+}
+.close {
+  display: none;
+}
+.dribbble-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* 防止 margin 塌陷时使用 */
+  overflow: hidden;
+  margin: auto;
+}
+.dribbble-logo a {
+  padding-top: 10px;
+  width: 80px;
+}
+.black {
+  width: 76px;
+  height: 30px;
+}
+.nav-show {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: #6e6d7a;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-top: 3px;
+  /* 媒体查询时使用 */
+  display: none;
+}
+.nav-show li {
+  margin: auto 6px;
+}
+.nav-show li:hover {
+  color: #ea4c89;
+}
+.nav-right-actions {
+  display: flex;
+}
+.sign-in-li {
+  display: flex;
+  align-items: center;
+  margin: 20px 10px;
+}
+.sign-in-li > a {
+  font-size: 100%;
+  vertical-align: baseline;
+  color: #6e6d7a;
+}
+.sign-in-li > a:hover {
+  color: #ea4c98;
+}
+.sign-up-li {
+  margin: 20px 10px 20px 0px;
+  display: flex;
+  align-items: center;
+  /* 媒体查询时使用 */
+  display: none;
+}
+.sign-up-li > a {
+  height: 40px;
+  padding: 10px 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  color: #fff;
+  background: #ea4c89;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.main {
+  margin-top: 58px;
+}
+.introduction-page-outer {
+  background-color: #f9f8fd;
+}
+.introduction-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 40px 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+.shot-content {
+  width: 100%;
+  text-align: center;
+}
+.text-content {
+  max-width: 624px;
+  margin-top: 20px;
+  text-align: center;
+}
+.text-content h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+.text-content h2 {
+  margin: 16px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.text-content-sign-up {
+  color: #fff;
+  height: 40px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: #ea4c89;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.picture-list-outer {
+  padding: 0px;
+  width: 100%;
+}
+.picture-list-inner {
+  padding: 0px 20px;
+  list-style: none;
+  display: grid;
+  gap: 36px;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+}
+.picture-list-item {
+  border: 0;
+  background: transparent;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+.picture-cover {
+  border-radius: 8px;
+}
+.picture-cover > img {
+  width: 100%;
+  border-radius: 8px;
+}
+.picture-msg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+.user-avatar {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.user-name {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  margin-left: 8px;
+  color: #0d0c22;
+}
+.user-badge {
+  border-radius: 3px;
+  background: #ccc;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-left: 8px;
+  padding: 2px 3px;
+}
+.like-and-view {
+  display: flex;
+  align-items: center;
+  color: #3d3d4e;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.like,
+.view {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+}
+.view {
+  margin-left: 8px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 48px 20px 32px;
+  width: 100%;
+  background-color: #fafafa;
+}
+.logo-red {
+  width: 104px;
+}
+.tag-line {
+  max-width: 256px;
+  margin: 20px 0;
+  color: #3d3d4e;
+  font-weight: 400;
+  line-height: 20px;
+}
+.show-details {
+  padding: 23px 23px 0px;
+  list-style: none;
+  display: none;
+}
+.show-details li {
+  cursor: pointer;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  color: #6e6d7a;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+}
+@media screen and (min-width: 375px) {
+  .picture-list-inner {
+    grid-template-columns: minmax(270px, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .picture-list-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .introduction-page {
+    grid-template-columns: 1fr 1fr;
+    direction: rtl;
+  }
+  .text-content {
+    text-align: end;
+  }
+}
+@media screen and (min-width: 920px) {
+  .nav-bar-collapse {
+    display: none;
+  }
+  .nav-show,
+  .sign-up-li {
+    display: flex;
+  }
+  .nav-show li {
+    font-weight: 600;
+  }
+  .nav-container {
+    position: relative;
+  }
+  .dribbble-logo {
+    position: absolute;
+    left: 0;
+  }
+  .nav-right-actions {
+    position: absolute;
+    right: 0;
+  }
+  /* 解决缩放不会等比例缩放，出现两小一大的问题，使用 minmax 规定死最小宽度 */
+  .picture-list-inner {
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    overflow: auto;
+  }
+  /* 实现导航栏不固定 */
+  .nav {
+    position: relative;
+  }
+  .main {
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .picture-list-inner {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .text-content h1 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  /* banner 部分宽度固定 */
+  .introduction-page {
+    width: 1680px;
+    padding: 0px 72px;
+    margin: 0px 120px;
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page">
+      <nav class="nav">
+        <div class="nav-container">
+          <div class="nav-bar-collapse">
+            <img src="./imgs/icon-menu.svg" alt="图片未显示" class="menu" />
+            <img src="./imgs/icon-close.svg" alt="图片未显示" class="close" />
+          </div>
+          <div class="dribbble-logo">
+            <a>
+              <img src="./imgs/logo-black.svg" alt="图片未显示" class="black" />
+            </a>
+            <ul class="nav-show">
+              <li>Inspiration</li>
+              <li>Find Work</li>
+              <li>Learn Design</li>
+              <li>Go Pro</li>
+              <li>Hire Designers</li>
+            </ul>
+          </div>
+          <ul class="nav-right-actions">
+            <li class="sign-in-li">
+              <a>Sign in</a>
+            </li>
+            <li class="sign-up-li">
+              <a>Sign up</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main class="main">
+        <!-- 导航栏折叠部分内容 -->
+        <ul class="show-details">
+          <li>Inspiration</li>
+          <li>Find Work</li>
+          <li>Learn Design</li>
+          <li>Go Pro</li>
+          <li>Hire Designers</li>
+        </ul>
+        <!-- 总体介绍内容 -->
+        <div class="introduction-page-outer active-inactive">
+          <div class="introduction-page">
+            <div class="shot-content">
+              <picture class="container-picture">
+                <source
+                  type="image/webp"
+                  sizes="(max-width: 500px) 320px, (max-width: 1200px) 400px, 510px"
+                  srcset="
+                    https://cdn.dribbble.com/assets/art-banners/romainbriaux-320w-ec9254ca29977e8be37b1ecb152090a962faa94bd923dc6cdff16ada6f428a27.webp   320w,
+                    https://cdn.dribbble.com/assets/art-banners/romainbriaux-400w-d58af42123a3626a5213873b5e73c806298b6b830abd44fff93a6c203abb3fc0.webp   400w,
+                    https://cdn.dribbble.com/assets/art-banners/romainbriaux-510w-e0859557ff1168e088a1d80e2de552aec85ed8c1343bb61656f87512127b3c4a.webp   510w,
+                    https://cdn.dribbble.com/assets/art-banners/romainbriaux-640w-d7dfe8be8b5c732e3a41b5f6e13542a88783b03c63b684a892d4756e565bcab7.webp   640w,
+                    https://cdn.dribbble.com/assets/art-banners/romainbriaux-800w-f8927e677f2ab85c8d454f14cc277f300d3c72e89889e38c1ae1d18e8e3fd667.webp   800w,
+                    https://cdn.dribbble.com/assets/art-banners/romainbriaux-1100w-caa2685efe993759bd7534384871c89939a864b91d14521e2b8b710fe638f18d.webp 1100w
+                  "
+                />
+                <source
+                  type="image/png"
+                  sizes="(max-width: 500px) 320px, (max-width: 1200px) 400px, 510px"
+                  srcset="
+                    https://cdn.dribbble.com/assets/art-banners/romainbriaux-320w-512098320c8b3a46ee443f90530bc1cbc7942cc36cec7c388d4573654c435fcf.png   320w,
+                    https://cdn.dribbble.com/assets/art-banners/romainbriaux-400w-22288560d9ec75955d374595de6df9271a1cd2e187e8712ff4bcccbb848d365f.png   400w,
+                    https://cdn.dribbble.com/assets/art-banners/romainbriaux-510w-4f2dbdb739cfcc67d5adede6bcc1095f41ad559af391f762194d1c35c318303a.png   510w,
+                    https://cdn.dribbble.com/assets/art-banners/romainbriaux-640w-3d5fb491eda05cd00617371bf1630411d0f9120e2ab390222be8dbaa8a948a14.png   640w,
+                    https://cdn.dribbble.com/assets/art-banners/romainbriaux-800w-a1667718b23f7d0ea370a97b57c3f7143b7978d40566f065f9b2ba8b296b9eed.png   800w,
+                    https://cdn.dribbble.com/assets/art-banners/romainbriaux-1100w-97eea970d8685aac38834f53a651aa5d484e2a62ad796f4279462d54ded65ca7.png 1100w
+                  "
+                />
+                <img
+                  width="335"
+                  height="300"
+                  alt="Dribbble is the leading destination to find &amp; showcase creative work and home to the world's best design professionals."
+                  class="signed-out-masthead-image"
+                  src="https://cdn.dribbble.com/assets/art-banners/romainbriaux-510w-4f2dbdb739cfcc67d5adede6bcc1095f41ad559af391f762194d1c35c318303a.png"
+                />
+              </picture>
+            </div>
+            <div class="text-content">
+              <h1>Explore the world’s leading design portfolios</h1>
+              <h2>
+                Millions of designers and agencies around the world showcase their portfolio work on
+                Dribbble - the home to the world’s best design and creative professionals.
+              </h2>
+              <a class="text-content-sign-up">Sign up</a>
+            </div>
+          </div>
+        </div>
+        <!-- 图片列表 -->
+        <div class="picture-list-outer active-inactive">
+          <ul class="picture-list-inner">
+            <!-- 该部分动态插入 -->
+          </ul>
+        </div>
+        <!-- 底部 -->
+        <footer class="footer active-inactive">
+          <img src="./imgs/logo-red.svg" alt="" class="logo-red" />
+          <div class="tag-line">
+            Dribbble is the world’s leading community for creatives to share, grow, and get hired.
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="./src/index.js" type="module"></script>
+  </body>
+</html>
